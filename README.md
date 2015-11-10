@@ -9,7 +9,8 @@ S. S. Bacanli, G. Solmaz and D. Turgut. “Opportunistic Message Broadcasting in
 The simulator is command-line based and prints out the result of the simulation in terms of results of some metrics.
 It is designed as command line intentionally to help developers to write shell scripts to run the program on the background.
 
-Example shell scripts and source files are inlcluded in the project.
+Example shell scripts and source files are included in the project.
+the simulator only prints out some results and writes some files under a folder. The developer should supposed to draw graphs from the results.
 
 
 Cosai
