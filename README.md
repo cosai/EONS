@@ -12,6 +12,10 @@ It is designed as command line intentionally to help developers to write shell s
 Example shell scripts and source files are included in the project.
 the simulator only prints out some results and writes some files under a folder. The developer should supposed to draw graphs from the results.
 
+How to run the simulator?
+Just double click on the simulator.bat and wait until it runs all the commands in parameters.bat 200 times.
+
+
 
 Cosai
 
