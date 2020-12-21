@@ -226,7 +226,7 @@ public class Metrics {
 				if(dif==0){
 					zeros++;
 				}
-				arr.add(new Integer(dif));
+				arr.add(Integer.valueOf(dif));
 				i++;
 				
 			}
@@ -307,7 +307,7 @@ public class Metrics {
 				int e=Integer.parseInt(etime);//end time
 				int dif=e-s;
 				if(n1==id1 && n2==id2){
-					arr.add(new Integer(s-first));
+					arr.add(Integer.valueOf(s-first));
 					first=s;
 				}
 				
