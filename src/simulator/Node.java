@@ -237,8 +237,8 @@ public class Node extends Prophetable{
 		ArrayList<Integer> a=new ArrayList<Integer>();
 		for(int y=0;y<messageBuffer.size();y++){
 			int idm=messageBuffer.get(y).getId();
-			if(!a.contains(new Integer(idm))){
-				a.add(new Integer(idm));
+			if(!a.contains(Integer.valueOf(idm))){
+				a.add(Integer.valueOf(idm));
 				all=all+","+idm;
 			}
 		}
@@ -263,7 +263,7 @@ public class Node extends Prophetable{
 		for(int i=0;i<messageIds.size();i++){
 			int mid=messageIds.get(i).intValue();
 			if( searchBufferMessageId(mid) ==-1){
-				ret.add(new Integer(mid));
+				ret.add(Integer.valueOf(mid));
 			}
 		}
 		return ret;
@@ -423,7 +423,7 @@ public class Node extends Prophetable{
 		ArrayList<Integer> v=new ArrayList<Integer>();
 		for(int i=0;i<messageBuffer.size();i++){
 			int el=messageBuffer.get(i).getId();
-			if(!v.contains(new Integer(el)) && messageBuffer.get(i).isSendable(time)){
+			if(!v.contains(Integer.valueOf(el)) && messageBuffer.get(i).isSendable(time)){
 				v.add(el);
 			}
 		}
@@ -441,7 +441,7 @@ public class Node extends Prophetable{
 			int el=messageBuffer.get(i).getId();
 			if(messageBuffer.get(i).getPrevPacketId()==-1){
 				//it means the message is created by the node itself
-				if(!v.contains(new Integer(el)) && messageBuffer.get(i).isSendable(time)){
+				if(!v.contains(Integer.valueOf(el)) && messageBuffer.get(i).isSendable(time)){
 					v.add(el);
 				}
 			}
