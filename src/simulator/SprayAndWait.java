@@ -57,8 +57,8 @@ public class SprayAndWait extends Epidemic{
 			while(st.hasMoreTokens()){
 				int t=Integer.parseInt(st.nextToken());
 				//if not sent before
-				if(!sentmessagesbefore.contains(new Integer(t))){
-					sents.add(new Integer(t));
+				if(!sentmessagesbefore.contains(Integer.valueOf(t))){
+					sents.add(Integer.valueOf(t));
 				}
 			}
 			v=Node.getStringFromMessageVector(sents);
