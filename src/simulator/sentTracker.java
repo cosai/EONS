@@ -59,8 +59,8 @@ public class sentTracker {
 				ArrayList<Integer> arr=listnodes.get(i).messages;
 				for(int j=0;j<irr.size();j++){
 					int mid=irr.get(j);
-					if(!arr.contains(new Integer(mid))){
-						arr.add(new Integer(mid));
+					if(!arr.contains(Integer.valueOf(mid))){
+						arr.add(Integer.valueOf(mid));
 					}
 				}
 			}
