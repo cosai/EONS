@@ -200,7 +200,7 @@ public class Message {
 
 		StringTokenizer st=new StringTokenizer(s,":");
 		while(st.hasMoreTokens()){
-			ret.add(new Integer(Integer.parseInt(st.nextToken())));
+			ret.add(Integer.valueOf(Integer.parseInt(st.nextToken())));
 		}
 		return ret;
 	}
