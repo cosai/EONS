@@ -61,7 +61,7 @@ public class SimLib {
 				for(int j=0;j<buf.size();j++){
 					int hopn=buf.get(j).getHopCount();
 					if(hopn != 0){
-						arr.add(new Double((double) hopn));
+						arr.add(Double.valueOf((double) hopn));
 					}
 				}
 			}//if buff not null
@@ -88,7 +88,7 @@ public class SimLib {
 				if(srate[i]>1){
 					System.out.println("PROBLEM in SimLib.java Success rate can not be greater than 1");
 				}
-				sratearr.add(new Double(srate[i]));
+				sratearr.add(Double.valueOf(srate[i]));
 		}
 		 
 
@@ -370,7 +370,7 @@ public class SimLib {
 			if(buf !=null){
 				for(int j=0;j<buf.size();j++){
 					int rem=buf.get(j).getRemaining();
-					arr.add(new Double((double) rem));
+					arr.add(Double.valueOf((double) rem));
 				}
 			}//if buff not null
 		}
